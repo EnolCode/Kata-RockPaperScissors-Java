@@ -1,14 +1,15 @@
 package com.factoriaf5.rps.models;
 
-public class Scissors {
-    private String type = "scissors";
-    public Scissors() {
+public class Scissors extends Figure{
+    
+    private final String type;
 
+    public Scissors() {
+        this.type = "scissors";
     }
+
     public String getType() {
         return type;
     }
-    public void setType(String type) {
-        this.type = type;
-    }
+
     }
