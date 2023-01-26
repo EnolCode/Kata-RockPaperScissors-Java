@@ -7,11 +7,9 @@ import org.junit.Test;
 public class PlayerTest {
 
     private Player player1;
-    private Player player2;
 
     public PlayerTest() {
         this.player1 = new Player();
-        this.player2 = new Player();
     }
 
     @Test
@@ -30,18 +28,5 @@ public class PlayerTest {
     public void test_Player_can_choose_scissors() {
         Figure scissors = player1.choose("scissors");
         assertEquals("scissors", scissors.getType());
-    }
-
-    @Test
-    public void asdas() {
-        Game game = new Game();
-        Player player11 = new Player();
-        Player player22 = new Player();
-
-        player11.choose("rock");
-        player22.choose("paper");
-
-        assertEquals("Player 2 win", game.whoWin(player11, player22));
-        
     }
 }

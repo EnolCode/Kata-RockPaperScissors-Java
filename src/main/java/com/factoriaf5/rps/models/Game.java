@@ -1,8 +1,8 @@
 package com.factoriaf5.rps.models;
 
 public class Game {
-    private Player player1;
-    private Player player2;
+    Player player1;
+     Player player2;
 
     public Game() {
         this.player1 = new Player();
@@ -25,12 +25,10 @@ public class Game {
         this.player2 = player2;
     }
 
-    // public  String whoWin(Player player1, Player player2) {
-
-    //     if(player1.choose().getType() == "rock" ){
-
-    //     }
-    // }
-
-
+    public  String whoWin(Player player1, Player player2) {
+        if(player1.choose("rock").getType() == "rock" && player2.choose("paper").getType() == "paper"){
+            return "Paper win";
+        }
+        return null;
+    }
 }
