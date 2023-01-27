@@ -29,16 +29,4 @@ public class PlayerTest {
         Figure scissors = player1.choose("scissors");
         assertEquals("scissors", scissors.getType());
     }
-
-    @Test
-    public void asdas() {
-        Game game = new Game();
-        Player player11 = new Player();
-        Player player22 = new Player();
-
-        player11.choose("rock");
-        player22.choose("paper");
-
-        
-    }
 }
