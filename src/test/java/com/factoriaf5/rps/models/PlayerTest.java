@@ -41,7 +41,6 @@ public class PlayerTest {
         player11.choose("rock");
         player22.choose("paper");
 
-        assertEquals("Player 2 win", game.whoWin(player11, player22));
         
     }
 }

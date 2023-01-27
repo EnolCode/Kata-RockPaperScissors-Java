@@ -8,5 +8,4 @@ public class Player {
         if(string == "scissors") return new Scissors();
         return null;
     }
-
 }
