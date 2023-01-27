@@ -4,10 +4,11 @@ public class Player {
     
     private Figure figure;
     public Figure choose(String string){
-        if(string == "rock") return new Rock();
-        if(string == "paper") return new Paper();
-        if(string == "scissors") return new Scissors();
+        if(string.equalsIgnoreCase("rock")) return new Rock();
+        if(string.equalsIgnoreCase("paper")) return new Paper();
+        if(string.equalsIgnoreCase("scissors")) return new Scissors();
         return null;
+
     }
     public Figure getFigure() {
         return figure;

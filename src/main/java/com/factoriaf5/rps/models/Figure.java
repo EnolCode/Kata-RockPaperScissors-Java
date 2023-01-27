@@ -5,4 +5,6 @@ public abstract class Figure {
     public Object getType() {
         return null;
     }
+
+    
 }
