@@ -29,4 +29,16 @@ public class PlayerTest {
         Figure scissors = player1.choose("scissors");
         assertEquals("scissors", scissors.getType());
     }
+
+    @Test
+    public void test_Player_can_choose_lizard() {
+            Figure lizard = player1.choose("lizard");
+        assertEquals("lizard", lizard.getType());
+    }
+
+    @Test
+    public void test_Player_can_choose_spock() {
+        Figure spock = player1.choose("spock");
+        assertEquals("spock", spock.getType());
+    }
 }
