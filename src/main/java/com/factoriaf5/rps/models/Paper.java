@@ -1,14 +1,8 @@
 package com.factoriaf5.rps.models;
 
 public class Paper extends Figure {
-    private final String type;
-
-    public String getType() {
-        return type;
+    @Override
+    public Type getType() {
+        return Type.PAPER;
     }
-
-    public Paper() {
-        this.type = "paper";
-    }
-
 }

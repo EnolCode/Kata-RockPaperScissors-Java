@@ -1,6 +1,6 @@
 package com.factoriaf5.rps.application;
 
-import com.factoriaf5.rps.models.Figure;
+import com.factoriaf5.rps.models.FigureFactory;
 import com.factoriaf5.rps.models.Paper;
 import com.factoriaf5.rps.models.Player;
 import com.factoriaf5.rps.models.Rock;
@@ -33,7 +33,7 @@ public class Game {
         this.player2 = player2;
     }
 
-    public String whoWin(Figure player1, Figure player2) {
+    public String whoWin(FigureFactory player1, FigureFactory player2) {
         if (player1 instanceof Rock) {
             if (player2 instanceof Paper) {
                 return "player2 wins using paper vs rock";
@@ -58,6 +58,7 @@ public class Game {
             }
             
         }
+
         if (player1 instanceof Scissors) {
             if (player2 instanceof Paper) {
                 return "player1 wins using scissors vs paper";
@@ -69,6 +70,7 @@ public class Game {
                 return "players draws using scissors vs scissors";
             }
         }
+
         return null;
     }
 }
