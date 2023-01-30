@@ -4,7 +4,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-import com.factoriaf5.rps.models.Figure;
+import com.factoriaf5.rps.models.FigureFactory;
 import com.factoriaf5.rps.models.Paper;
 import com.factoriaf5.rps.models.Player;
 import com.factoriaf5.rps.models.Rock;
@@ -24,8 +24,8 @@ public class GameTest {
 
     @Test
     public void player1_choose_paper_player2_choose_rock() {
-        Figure rock = player1.choose("rock");
-        Figure paper = player2.choose("paper");
+        FigureFactory rock = player1.choose("rock");
+        FigureFactory paper = player2.choose("paper");
 
         assertTrue(rock instanceof Rock);
         assertTrue(paper instanceof Paper);
