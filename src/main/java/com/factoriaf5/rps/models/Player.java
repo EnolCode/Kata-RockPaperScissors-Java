@@ -3,7 +3,7 @@ package com.factoriaf5.rps.models;
 public class Player {
     private Figure figure;
 
-    public Figure chooseFigure(String string) {
+    public Figure choose(String string) {
         this.figure = FigureFactory.createFigure(string);
         return this.figure;
     }

@@ -15,18 +15,18 @@ public class PlayerTest {
     @Test
     public void test_Player_can_choose_Paper() {
         Figure paper = player1.choose("paper");
-        assertEquals("paper", paper.getType());
+        assertEquals(Figure.Type.PAPER, paper.getType());
     }
 
     @Test
     public void test_Player_can_choose_Rock() {
         Figure rock = player1.choose("rock");
-        assertEquals("rock", rock.getType());
+        assertEquals(Figure.Type.ROCK, rock.getType());
     }
 
     @Test
     public void test_Player_can_choose_scissors() {
         Figure scissors = player1.choose("scissors");
-        assertEquals("scissors", scissors.getType());
+        assertEquals(Figure.Type.SCISSORS, scissors.getType());
     }
 }

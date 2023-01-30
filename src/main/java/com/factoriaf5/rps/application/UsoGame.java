@@ -11,8 +11,8 @@ public class UsoGame {
         String figure1 = JOptionPane.showInputDialog("Escoge la figura.");
         String figure2 = JOptionPane.showInputDialog("Escoge la figura.");
 
-         player1.setFigure(player1.choose(figure1));
-         player2.setFigure(player2.choose(figure2));
+         player1.choose(figure1);
+         player2.choose(figure2);
         
         Game game = new Game();
         JOptionPane.showMessageDialog(null, game.whoWin(player1.getFigure(), player2.getFigure()), "Resultado", JOptionPane.INFORMATION_MESSAGE);
